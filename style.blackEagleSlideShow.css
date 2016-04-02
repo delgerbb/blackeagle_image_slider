@@ -1,0 +1,38 @@
+/*
+       Stylesheet for BlackEagle-Slide-Show by Delgerbayar.
+       https://github.com/delgerbb/blackeagle_image_slider
+*/
+
+#blackeagle-article-title {font-family:sans-serif;}
+#blackeagle-article-title {color:#404244;font-size:26px;font-weight:bold;line-height:1;margin-bottom:10px;}
+#blackeagle-center-wrapper {width:940px;margin:32px auto 0;padding-bottom:18px;}
+.blackeagle-link {color:#248;cursor:pointer;text-decoration:underline;}
+.blackeagle-link:hover {color:#D52;}
+.blackeagle-btn-show-left-image, .blackeagle-btn-show-right-image{
+    width: 30px;
+    height: 30px;
+    z-index: 1;
+    position: absolute;
+    background: rgba(0,0,0,0.5);
+    border-radius: 50%;
+    padding: 5px;
+    cursor: pointer;
+}
+.blackeagle-btn-show-left-image > span.glyphicon-chevron-left{
+    color:#fff;
+    font-size: 18px;
+}
+.blackeagle-btn-show-right-image > span.glyphicon-chevron-right{
+    color:#fff;
+    font-size: 18px;
+}
+.blackeagle-image-caption{
+    background: rgba(0,0,0,0.4);
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    position: absolute;
+    z-index: 1;
+    color: #fff;
+    padding: 5px 10px;
+}

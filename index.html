@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>jQuery Slideshow Plugin (example)</title>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css"/>
+
+        <link rel="stylesheet" type="text/css" href="style.blackEagleSlideShow.css" />
+        <style type="text/css">
+            #center-wrapper {
+                width: 940px;
+                margin: 32px auto 0;
+            }
+            #slideshow img {
+                display: none;
+                position: absolute; 
+            }
+            #slideshow{
+                /*border: 1px solid red;*/
+                width: 600px;
+                height: 400px;
+                position: relative;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- BEGIN: Article info -->
+        <div id="blackeagle-article-info">
+            <div id="blackeagle-center-wrapper" class="blackeagle-nonav">
+                <h1 id="blackeagle-article-title">jQuery BlackEagle Slideshow Plugin</h1>
+            </div>	
+        </div>
+        <!-- END: Article info -->
+
+        <div id="center-wrapper">
+            <div id="slideshow">
+                <img src="images/mongolia_slide_001.jpg" alt="" title="Because in javascript, an empty string"/>
+                <img src="images/mongolia_slide_002.jpg" alt="" title="both evaluate to false in a boolean context."/>
+                <img src="images/mongolia_slide_003.jpg" alt="" title=""/>
+                <img src="images/mongolia_slide_004.jpg" alt="" title="if you want to accept null but reject empty <a href='https://www.google.com'>google</a>"/>
+            </div>
+            <div id="imageCurrentIndex"></div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-1.12.2.min.js" integrity="sha256-lZFHibXzMHo3GGeehn1hudTAP3Sc0uKXBXAzHX1sjtk=" crossorigin="anonymous"></script>
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="jquery.blackEagleSlideShow.js"></script>
+        <script type="text/javascript">
+            $.blackEagleSlideShow('#slideshow', {'delay': 5000, 'fadeSpeed': 500});
+        </script>
+    </body>
+</html>
